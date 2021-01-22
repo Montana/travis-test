@@ -1,12 +1,7 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
-dist: trusty 
-services: docker 
+language: generic
 jobs:
   include:
     - name: one
     - name: two
       if: $FOO=foo
-      script: bash ./wat
+script: true

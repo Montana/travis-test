@@ -1,4 +1,6 @@
 language: ruby
+dist: trusty 
+services: docker 
 jobs:
   include:
     - name: one

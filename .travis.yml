@@ -1,13 +1,6 @@
 language: shell
-
-env:
-  - ONE=one
-  - TWO=two
-
 jobs:
   include:
-    - stage: one
-      env: ONE=one
-    - env: TWO=two
-
-script: true
+    - name: one
+    - name: two
+      if: $FOO=foo

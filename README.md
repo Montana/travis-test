@@ -4,16 +4,10 @@ Messing around with `.travis.yml`.
 
 ```yaml
 language: shell
-
-env:
-  - ONE=one
-  - TWO=two
-
 jobs:
   include:
-    - stage: one
-      env: ONE=one
-    - env: TWO=two
-
+    - name: one
+    - name: two
+      if: $FOO=foo
 script: true
 ```

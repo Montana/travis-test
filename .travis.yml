@@ -1,0 +1,13 @@
+language: shell
+
+env:
+  - ONE=one
+  - TWO=two
+
+jobs:
+  include:
+    - stage: one
+      env: ONE=one
+    - env: TWO=two
+
+script: true

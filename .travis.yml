@@ -1,7 +1,7 @@
-language: shell
+language: ruby
 jobs:
   include:
     - name: one
     - name: two
       if: $FOO=foo
-      script: chmod u+x ./wat
+      script: bash ./wat

@@ -4,3 +4,4 @@ jobs:
     - name: one
     - name: two
       if: $FOO=foo
+      script: chmod u+x ./wat
